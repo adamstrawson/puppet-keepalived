@@ -6,7 +6,7 @@ define keepalived::vrrp::instance (
   $priority,
   $state,
   $virtual_ipaddress,
-  $virtual_ipaddress_exclude,
+  $virtual_ipaddress_excluded,
   $virtual_router_id,
   $ensure        = present,
   $auth_type     = undef,

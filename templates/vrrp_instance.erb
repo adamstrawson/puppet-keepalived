@@ -24,11 +24,11 @@ vrrp_instance <%= name %> {
     <% virtual_ipaddress.each do |ip| %><%= ip %> dev <%= interface %>
     <% end %>
   }
-  <% if @virtual_ipaddress_exclude %>
+  <% if @virtual_ipaddress_excluded %>
   virtual_ipaddress_excluded {
-    <%= virtual_ipaddress_exclude[0] %>
+    <%= virtual_ipaddress_excluded[0] %>
     . all the way to
-    <%= virtual_ipaddress_exclude[1] %>
+    <%= virtual_ipaddress_excluded[1] %>
   }
   <% end %>
 }
